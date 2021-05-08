@@ -3,8 +3,14 @@
 <head>
 	<title>MAKET2.0</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="script.js"></script>
 </head>
 <body>
 	<header class="header">
@@ -16,16 +22,17 @@
 					    <option value="Казань">Казань</option>
 				   </select>
 
-				   <a href="" class="menu__call call">Обратный звонок</a>
+				   <a href="" class="menu__call phone__call">Обратный звонок</a>
 				   <p class="menu__time time">Пн-Вс 10-19</p>
-				   <a href="" class="menu__phone phone">8 (495) 229 85 59</a>
+				   <a href="" class="menu__phone phone__call">8 (495) 229 85 59</a>
 				</div>
 
 				<div class="menu__logo logo">
 					<div class="logo__menu__btn menu__btn">
 						<img src="icon_menu.svg">
-						<a href="Menu">Меню</a>
+						<a href="Menu" class="logo__text">Меню</a>
 					</div>
+
 					<svg width="272" height="73" viewBox="0 0 272 73" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 					<rect y="28" width="194" height="20" fill="url(#pattern0)"/>
 					<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="194" height="48">
@@ -58,29 +65,31 @@
 					</defs>
 					</svg>
 
-					<svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M6 10.5L24 10.5" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-					<path d="M21 7.5L24 10.5L21 13.5" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-					<path d="M24 20.5L6 20.5" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-					<path d="M9 23.5L6 20.5L9 17.5" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-					</svg>
+					<div class="svg__h">
+						<svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M6 10.5L24 10.5" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M21 7.5L24 10.5L21 13.5" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M24 20.5L6 20.5" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M9 23.5L6 20.5L9 17.5" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
 
-					<svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<g clip-path="url(#clip1)">
-					<path d="M27.3423 26.0064L20.5562 19.2203C21.8831 17.5822 22.6819 15.4995 22.6819 13.2321C22.6819 7.97569 18.4054 3.69922 13.149 3.69922C7.89263 3.69922 3.61621 7.97569 3.61621 13.2321C3.61621 18.4885 7.89268 22.7649 13.1491 22.7649C15.4165 22.7649 17.4992 21.9662 19.1373 20.6393L25.952 27.454C26.1606 27.6333 26.8017 28.0335 27.3811 27.454C27.8831 26.952 27.5252 26.1893 27.3423 26.0064ZM13.1491 20.758C8.99904 20.758 5.62314 17.3821 5.62314 13.2321C5.62314 9.08205 8.99904 5.70615 13.1491 5.70615C17.2991 5.70615 20.675 9.08205 20.675 13.2321C20.675 17.3821 17.2991 20.758 13.1491 20.758Z" fill="white"/>
-					</g>
-					<defs>
-					<clipPath id="clip1">
-					<rect width="30" height="30" fill="white" transform="translate(0 0.5)"/>
-					</clipPath>
-					</defs>
-					</svg>
+						<svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g clip-path="url(#clip1)">
+						<path d="M27.3423 26.0064L20.5562 19.2203C21.8831 17.5822 22.6819 15.4995 22.6819 13.2321C22.6819 7.97569 18.4054 3.69922 13.149 3.69922C7.89263 3.69922 3.61621 7.97569 3.61621 13.2321C3.61621 18.4885 7.89268 22.7649 13.1491 22.7649C15.4165 22.7649 17.4992 21.9662 19.1373 20.6393L25.952 27.454C26.1606 27.6333 26.8017 28.0335 27.3811 27.454C27.8831 26.952 27.5252 26.1893 27.3423 26.0064ZM13.1491 20.758C8.99904 20.758 5.62314 17.3821 5.62314 13.2321C5.62314 9.08205 8.99904 5.70615 13.1491 5.70615C17.2991 5.70615 20.675 9.08205 20.675 13.2321C20.675 17.3821 17.2991 20.758 13.1491 20.758Z" fill="white"/>
+						</g>
+						<defs>
+						<clipPath id="clip1">
+						<rect width="30" height="30" fill="white" transform="translate(0 0.5)"/>
+						</clipPath>
+						</defs>
+						</svg>
 
-					<svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M27.4331 11.8672C27.2908 11.735 27.0945 11.6726 26.8999 11.6949H20.734V9.18446C20.734 6.50131 18.4401 4.33778 15.6251 4.33778C12.8101 4.33778 10.5163 6.50131 10.5163 9.18446V11.6949H4.34268L4.33587 11.6949C4.25283 11.6948 4.15286 11.6948 4.06197 11.7153C3.96849 11.7364 3.87277 11.7817 3.80556 11.878C3.66464 12.0133 3.59826 12.2067 3.63137 12.3988L3.63135 12.3988L3.63183 12.4013L5.82972 23.7839L5.82972 23.7839C6.14905 25.4353 7.65132 26.6357 9.41047 26.6631V26.6631H9.41245H21.8377V26.6632L21.8407 26.6631C23.6044 26.622 25.1031 25.4124 25.4204 23.7562L25.4204 23.7562L25.2957 23.7321L25.4205 23.756L27.6183 12.4013L27.6183 12.4013L27.6188 12.3988C27.6528 12.2016 27.5819 12.003 27.4331 11.8672ZM27.4331 11.8672C27.4333 11.8674 27.4335 11.8676 27.4336 11.8677L27.3471 11.9607L27.4326 11.8668C27.4328 11.8669 27.4329 11.8671 27.4331 11.8672ZM23.9988 23.5689L23.9986 23.5698C23.8133 24.5576 22.909 25.2885 21.8372 25.2985H9.41299C8.34118 25.2885 7.43685 24.5576 7.25156 23.5698L7.25138 23.5689L5.20027 13.0595H26.0499L23.9988 23.5689ZM11.9425 9.18446C11.9425 7.26776 13.5847 5.70241 15.6251 5.70241C17.6655 5.70241 19.3076 7.26776 19.3076 9.18446V11.6949H11.9425V9.18446Z" fill="white" stroke="white" stroke-width="0.254121"/>
-					<path d="M20.0209 18.4736C20.4082 18.4736 20.734 18.1745 20.734 17.7913V16.1256C20.734 15.7423 20.4082 15.4433 20.0209 15.4433C19.6335 15.4433 19.3077 15.7423 19.3077 16.1256V17.7913C19.3077 17.7913 19.3077 17.7913 19.3077 17.7913C19.3076 18.1746 19.6336 18.4736 20.0209 18.4736Z" fill="white" stroke="white" stroke-width="0.254121"/>
-					<path d="M11.2296 18.4736C11.6169 18.4736 11.9428 18.1745 11.9428 17.7913V16.1256C11.9428 15.7423 11.6169 15.4433 11.2296 15.4433C10.8423 15.4433 10.5164 15.7423 10.5164 16.1256V17.7913C10.5164 18.1745 10.8423 18.4736 11.2296 18.4736Z" fill="white" stroke="white" stroke-width="0.254121"/>
-					</svg>
+						<svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M27.4331 11.8672C27.2908 11.735 27.0945 11.6726 26.8999 11.6949H20.734V9.18446C20.734 6.50131 18.4401 4.33778 15.6251 4.33778C12.8101 4.33778 10.5163 6.50131 10.5163 9.18446V11.6949H4.34268L4.33587 11.6949C4.25283 11.6948 4.15286 11.6948 4.06197 11.7153C3.96849 11.7364 3.87277 11.7817 3.80556 11.878C3.66464 12.0133 3.59826 12.2067 3.63137 12.3988L3.63135 12.3988L3.63183 12.4013L5.82972 23.7839L5.82972 23.7839C6.14905 25.4353 7.65132 26.6357 9.41047 26.6631V26.6631H9.41245H21.8377V26.6632L21.8407 26.6631C23.6044 26.622 25.1031 25.4124 25.4204 23.7562L25.4204 23.7562L25.2957 23.7321L25.4205 23.756L27.6183 12.4013L27.6183 12.4013L27.6188 12.3988C27.6528 12.2016 27.5819 12.003 27.4331 11.8672ZM27.4331 11.8672C27.4333 11.8674 27.4335 11.8676 27.4336 11.8677L27.3471 11.9607L27.4326 11.8668C27.4328 11.8669 27.4329 11.8671 27.4331 11.8672ZM23.9988 23.5689L23.9986 23.5698C23.8133 24.5576 22.909 25.2885 21.8372 25.2985H9.41299C8.34118 25.2885 7.43685 24.5576 7.25156 23.5698L7.25138 23.5689L5.20027 13.0595H26.0499L23.9988 23.5689ZM11.9425 9.18446C11.9425 7.26776 13.5847 5.70241 15.6251 5.70241C17.6655 5.70241 19.3076 7.26776 19.3076 9.18446V11.6949H11.9425V9.18446Z" fill="white" stroke="white" stroke-width="0.254121"/>
+						<path d="M20.0209 18.4736C20.4082 18.4736 20.734 18.1745 20.734 17.7913V16.1256C20.734 15.7423 20.4082 15.4433 20.0209 15.4433C19.6335 15.4433 19.3077 15.7423 19.3077 16.1256V17.7913C19.3077 17.7913 19.3077 17.7913 19.3077 17.7913C19.3076 18.1746 19.6336 18.4736 20.0209 18.4736Z" fill="white" stroke="white" stroke-width="0.254121"/>
+						<path d="M11.2296 18.4736C11.6169 18.4736 11.9428 18.1745 11.9428 17.7913V16.1256C11.9428 15.7423 11.6169 15.4433 11.2296 15.4433C10.8423 15.4433 10.5164 15.7423 10.5164 16.1256V17.7913C10.5164 18.1745 10.8423 18.4736 11.2296 18.4736Z" fill="white" stroke="white" stroke-width="0.254121"/>
+						</svg>
+					</div>
 				</div>
 				
 				<nav class="menu__nav nav">
@@ -104,7 +113,7 @@
 							<a href="#category6" class="nav__link">Manhattan</a>
 						</li>
 						<li class="nav__item">
-							<select class="nav__link" required="">
+							<select class="nav__link nav__link__list" required="">
 					    		<option selected value="Другая">Другая продукция</option>
 					    		<option value="Мойки Rodi (Италия)">Мойки Rodi (Италия)</option>
 					    		<option value="Мойки Status (Португалия)">Мойки Status (Португалия)</option>
@@ -125,9 +134,9 @@
 		</section>
  		
  		<section class="header__btns btns">
- 			<button class="btns__content"></button>
- 			<button class="btns__content"></button>
- 			<button class="btns__content"></button>
+ 			<button id="btn__bgr" class="btns__content"></button>
+ 			<button id="btn__bgr" class="btns__content"></button>
+ 			<button id="btn__bgr" class="btns__content"></button>
  		</section>
 
  		<section class="header__blocks blocks">
@@ -138,7 +147,7 @@
 	<main class="main">
 		<section class="main__franchise">
 			<h2 class="franchise__heading">THE CROWN FOR YOUR KITCHEN</h2>
-			<div>
+			<div class="franchise__el">
 				<select class="franchise__list" required=''>
 					<option selected value="Reginox bv, Nederland">Reginox bv, Nederland</option>
 				</select>
@@ -235,7 +244,7 @@
 				</div>
 
 				<div class="popilar__el">
-					<img class="el__img" src="image5.jpg">
+					<img class="el__img" src="image5.png">
 					<strong class="el__text">Amsterdam 34 Caffe Silvery</strong>
 					<p class="el__text">19 000 руб</p>
 				</div>
@@ -251,8 +260,9 @@
 		<section class="main__about about">
 			<h2 class="about__heading">О компании</h2>
 			<div class="about__wrapper">
-				<strong class="about__text">Добро пожаловать на сайт Компании Reginox Reef Holding (ООО «РеджиноксРиф   Холдинг») — единственного и официального   представителя производителя сантехнической продукции для кухни  и ванной комнаты Reginox (Нидерланды).</strong>
-				<p class="about__text">Основной специализацией нашей компании являются розничные  и оптовые продажи кухонной сантехники по всей России. Мы предлагаем кухонные мойки из нержавеющей стали и гранитного композита,  смесители для кухни, а также оригинальную продукцию от Reginox:</p>
+				<strong class="about__text">Добро пожаловать на сайт Компании Reginox Reef Holding (ООО «РеджиноксРиф   Холдинг») — единственного и официального   представителя производителя сантехнической продукции для кухни и ванной комнаты Reginox (Нидерланды).</strong>
+
+				<p class="about__text">Основной специализацией нашей компании являются розничные и оптовые продажи кухонной сантехники по всей России. Мы предлагаем кухонные мойки из нержавеющей стали и гранитного композита,  смесители для кухни, а также оригинальную продукцию от Reginox:</p>
 
 				<ul class="about__list">
 					<li class="about__el">умывальники</li>
@@ -261,10 +271,109 @@
 					<li class="about__el">многофункциональные кухонные комплексы и др.</li>
 				</ul>
 
-				<p class="about__text">Более 25 лет назад компания RRHolding представила на российском рынке кухонные мойки Reginox из нержавеющей стали, приятно удивившие покупателей отличным качеством, многообразием моделей и современным дизайном. Продукция Reginox входит в постоянный ассортимент ряда крупных фабрик-производителей мебели, введена  в предложение крупнейших продавцов мебельной фурнитуры  и комплектующих, и представлена вомножестве кухонных салонов  по всей России. За годы нашей работы мы заключили контракты в сферах: </p>
+				<p class="about__text">Более 25 лет назад компания RRHolding представила на российском рынке кухонные мойки Reginox из нержавеющей стали, приятно удивившие покупателей отличным качеством, многообразием моделей и современным дизайном. Продукция Reginox входит в постоянный ассортимент ряда крупных фабрик-производителей мебели, введена в предложение крупнейших продавцов мебельной фурнитуры и комплектующих, и представлена вомножестве кухонных салонов по всей России. За годы нашей работы мы заключили контракты в сферах: </p>
+
+				<ul class="about__list">
+					<li class="about__el">авиастроение</li>
+					<li class="about__el">вагоностроение</li>
+					<li class="about__el">судостроение</li>
+					<li class="about__el">здравоохранение</li>
+					<li class="about__el">предприятия общественного питания</li>
+					<li class="about__el">иные учреждения сферы обслуживания и др.</li>
+				</ul>
+
+				<h4 class="about__heading__text">наши преимущества</h4>
+
+				<ul class="about__list">
+					<li class="about__el">многолетний опыт, профессиональный подход, надежное партнерство и отличная репутация на рынке</li>
+					<li class="about__el">высококачественный европейский товар и гарантия производителя, соответствие всем международным и российским стандартам и требованиям</li>
+					<li class="about__el">постоянное наличие на складе Москвы и Санкт-Петербурга (официальное представительство ООО «Ревестал»), а также возможность изготовления под индивидуальный заказ</li>
+					<li class="about__el">работа с розничными покупателями, с мелкооптовыми и крупно-оптовыми заказчиками, сотрудничество с каждым покупателем или бизнес-партнером по специальной программе и индивидуальной ценовой политике</li>
+					<li class="about__el">широкий ассортимент и различные модификации, позволяющие реализовать проекты в различных сферах- доставка в любую точку России</li>
+				</ul>
+
+				<p class="about__text">Благодаря многолетнему и плодотворному тандему RRHolding и Reginox, сегодня мы имеем большое количество бизнес-партнеров, в том числе и за пределами РФ, с которыми поддерживаем и развиваем взаимовыгодные отношения, приобрели популярность среди потребителей, и сохранили за собой статус компании, предлагающей на рынке России продукцию со «стальной репутацией». Мы предлагаем лучшее качество от европейского завода-производителя (завод   расположен   в   Нидерландах,   город   Rijssen) и пожизненную гарантию на продукцию из нержавеющей стали!</p>
 			</div>
 		</section>
 
+		<section class="main__final">
+			<div>
+				<button class="final__component">О компании 
+					<svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M12.5104 6.01953L6.99967 1.29617L1.48927 6.01953" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>	
+				</button>  
+				<ul class="final__list">
+					<li class="final__el">Почему мы</li>
+					<li class="final__el">Наши партнеры</li>
+					<li class="final__el">Сертификаты и гарантии</li>
+					<li class="final__el">Статьи</li>
+					<li class="final__el">Информация</li>
+					<li class="final__el">Каталоги</li>
+					<li class="final__el">Доставка и оплата</li>
+					<li class="final__el">Контакты</li>
+				</ul>
+			</div>
+
+			<div>
+				<button class="final__component">Каталог 
+					<svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M12.5104 6.01953L6.99967 1.29617L1.48927 6.01953" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>	
+				</button>  
+				<ul class="final__list">
+					<li class="final__el">Мойки</li>
+					<li class="final__el">Смесители</li>
+					<li class="final__el">Аксессуары</li>
+					<li class="final__el">Плиты</li>
+					<li class="final__el">умывальники</li>
+					<li class="final__el">Столешницы</li>
+					<li class="final__el">Системы хранения Manhattan</li>
+					<li class="final__el">Измельчители Bone Crusher</li>
+					<li class="final__el">Другая продукция</li>
+				</ul>
+			</div>
+
+			<div>
+				<button class="final__component">Бренды 
+					<svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M12.5104 6.01953L6.99967 1.29617L1.48927 6.01953" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>	
+				</button>  
+				<ul class="final__list">
+					<li class="final__el">Reginox</li>
+					<li class="final__el">Rodi</li>
+					<li class="final__el">Whinstone</li>
+					<li class="final__el">Rerih</li>
+					<li class="final__el">Status</li>
+					<li class="final__el">Bone Crusher</li>
+					<li class="final__el">Armando Vicario</li>
+					<li class="final__el">Webert</li>
+					<li class="final__el">Effepi</li>
+					<li class="final__el">Glionna Bagno</li>
+					<li class="final__el">Аквафор</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="footer">
+			<div>
+				<img class="footer__img" src="pictire1.svg">
+				<img class="footer__img" src="pictire2.svg">
+			</div>
+			<div>
+				<img class="footer__img" src="facebook.svg">
+				<img class="footer__img" src="twitter.svg">
+				<img class="footer__img" src="vk.svg">
+				<img class="footer__img" src="inst.svg">
+			</div>
+			<img class="footer__blocks" src="blocks.svg">
+		</section>
+
+		<section class="footer__info">
+			<p class="info__text">Политика конфеденциальности</p>
+			<p class="info__text">2020 © Reginox-shop</p>
+		</section>
 	</main>
 
 </body>
