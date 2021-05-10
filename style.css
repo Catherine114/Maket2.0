@@ -302,7 +302,6 @@ body{
 }
 
 .main__about{
-	padding-right: 335px;
 	padding-left: 335px;
 	padding-top: 130px;
 }
@@ -315,6 +314,51 @@ body{
 	line-height: 59px;
 	text-transform: uppercase;
 	color: #333333;
+	margin-bottom: 40px;
 }
 
-.
+.about__text{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 150%;
+	letter-spacing: 0.02em;
+	color: #333333;
+	margin-bottom: 40px;
+	margin-left: 220px;
+	margin-right: 552px;
+}
+
+.about__list{
+	font-family: Montserrat;
+	margin-bottom: 40px;
+	margin-left: 260px;
+	margin-right: 552px;
+}
+
+.list__el{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 150%;
+	letter-spacing: 0.02em;
+	color: #333333;
+}
+
+.about__el{
+	color: #AD2131;;
+}
+
+.about__heading__text{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 32px;
+	line-height: 39px;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+	margin-left: 220px;
+	margin-right: 552px;
+}
