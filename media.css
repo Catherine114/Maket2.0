@@ -6,7 +6,7 @@
 		height: 667px;
 		background-image: none;
 		background-size: cover;
-		background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%), url(bg_mob.jpg);
+		background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%), url(images/bg_mob.jpg);
 	}
 
 	.header__menu{
@@ -93,7 +93,7 @@
 		margin-left: 57px;
 		margin-bottom: 40px;
 		background: #AD2131;
-		background-image: url(photo.jpg);
+		background-image: url(images/photo.jpg);
 		height: 114px;
 		width: 278px;
 		background-repeat: no-repeat;
