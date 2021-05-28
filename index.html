@@ -4,6 +4,7 @@
 	<title>MAKET2.0</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="media.css">
+	<link rel="stylesheet" type="text/css" href="tablet.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 	<meta charset="utf-8">
@@ -31,7 +32,7 @@
 						<a href="Menu" class="logo__text">Меню</a>
 					</div>
 
-					<svg width="272" height="73" viewBox="0 0 272 73" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+					<div class="logotip"><svg width="272" height="73" viewBox="0 0 272 73" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 					<rect y="28" width="194" height="20" fill="url(#pattern0)"/>
 					<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="194" height="48">
 					<rect width="194" height="48" fill="url(#pattern1)"/>
@@ -61,7 +62,7 @@
 					</clipPath>
 					<image id="image0" width="198" height="50" xlink:href="data:image/png;base64,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"/>
 					</defs>
-					</svg>
+					</svg></div>
 
 					<div class="svg__head__min">
 						<svg class="svg__menumin" width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -185,7 +186,9 @@
 			<h2 class="catalog__head head">каталог</h2>
 			<div class="catalog__wrapper">
 				<div class="catalog__element">
-					<img class="element__img" src="photo1.jpg">
+					<img class="element__img" srcset="photo1.jpg 2046w,
+				                 photo1.jpg 1146w"
+				         src="photo1.jpg" alt="">
 					<h4 class="element__heading">Мойки</h5>
 					<div class="heading__block">
 						<a href=""><img  class="block__class" src="menu.svg" alt="catalog"></a>
@@ -445,7 +448,7 @@
 					<a href="" class="final__el"><li>Аквафор</li></a>
 				</ul>
 			</div>
-			<div class="final__min">
+			<div class="final__min final__tablet">
 				<button class="final__component">О магазине 
 					<svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M12.5104 6.01953L6.99967 1.29617L1.48927 6.01953" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
