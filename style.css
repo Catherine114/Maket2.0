@@ -73,6 +73,12 @@ a {
 		margin-top: 28px;
 	}
 
+	.header__promo{
+		max-width: 1251px;
+		width: 100%;
+		margin: 0 auto;
+	}
+
 	.main__franchise{
 		background: #ECECEC;
 		padding-right: 335px;
@@ -452,8 +458,9 @@ a {
 }
 
 .header__menu{
-	margin-left: 337px;
-	margin-right: 337px;
+	max-width: 1246px;
+	width: 100%;
+	margin: 0 auto;
 	padding-top: 14px;
 }
 
@@ -570,8 +577,6 @@ a {
 	line-height: 78px;
 	text-transform: uppercase;
 	color: #FFFFFF;
-	margin-left: 334px;
-	margin-right: 842px;
 	padding-top: 105px;
 	margin-bottom: 11px;
 }
@@ -584,13 +589,6 @@ a {
 	line-height: 34px;
 	letter-spacing: 0.03em;
 	color: #FFFFFF;
-	margin-left: 334px;
-	margin-right: 957px;
-}
-
-.promo__slider-controls{
-	margin-left: 1539px;
-	margin-right: 371px;
 }
 
 .slider-controls__item{
