@@ -38,9 +38,7 @@ a {
 	
 	.header{
 		animation: slide 20s linear infinite;
-		width: 1921px;
-		height: 811px;
-		max-width: 1921px;
+		width: 100%;
 		min-width: 375px;
 	}
 
