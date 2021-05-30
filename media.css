@@ -1,4 +1,20 @@
+button{
+	cursor: pointer;
+	padding: 0;
+	border: none;
+	font: inherit;
+	color: inherit;
+	background-color: transparent;
+}
 @media (max-width: 375px) {
+	.visually-hidden {
+	  position: absolute;
+	  clip: rect(0 0 0 0);
+	  width: 1px;
+	  height: 1px;
+	  margin: -1px;
+	}
+
 	.header{
 		max-width: 375px;
 		min-width: 270px;
@@ -15,15 +31,30 @@
 		padding-top: 20px;
 	}
 
-	.menu__time{
+	.info__time{
 		margin-left: 0%;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 20px;
+		color: white;
 	}
 
-	.menu__list{
+	.info__callback{
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 20px;
+		color: white;
+	}
+
+	.info__cities{
 		display: none;
 	}
 
-	.menu__phone{
+	.info__phone{
 		display: none;
 	}
 
@@ -33,20 +64,20 @@
 		flex-direction: row-reverse;
 	}
 
-	.menu__logo{
+	.menu__functions{
 		margin-bottom: 20px;
 		margin-top: 20px;
 	}
 
-	.logo__text{
+	.menu-button__text{
 		display: none;
 	}
 
-	.logo__img{
+	.menu-button__img{
 		display: none;
 	}
 
-	.svg__max{
+	.actions__arrows{
 		display: none;
 	}
 
@@ -54,13 +85,21 @@
 		display: none;
 	}
 
-	.svg__head__min{
+	.functions__actions{
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
+		align-content: center;
 	}
 
-	.menu__phone__min{
+	.actions__phone{
 		align-self: center;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 20px;
+		color: white;
 	}
 
 	.promo__heading{
@@ -89,7 +128,7 @@
 		margin-right: 61px;
 	} 
 
-	.header__blocks{
+	.promo__promoted{
 		margin-left: 57px;
 		margin-bottom: 40px;
 		background: #AD2131;
@@ -104,7 +143,7 @@
 		flex-wrap: wrap;
 	}
 
-	.blocks__text{
+	.promoted__text{
 		color: #ECECEC;
 		font-family: Montserrat;
 		font-style: normal;
