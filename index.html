@@ -228,9 +228,15 @@
 			<h2 class="catalog__head head">каталог</h2>
 			<div class="catalog__wrapper">
 				<div class="catalog__element">
-					<img class="element__img" srcset="images/photo1.jpg 2046w,
-				                 images/photo1.jpg 1146w"
-				         src="images/photo1.jpg" alt="">
+					<picture>
+						<source type="image/jpg"
+								srcset="./images/photo4.jpg 320px,
+				                		./images/photo1.jpg 800px"
+								src="./images/photo1.jpg"
+						>
+						<img class="element__img" src="./images/photo1.jpg" alt="photo">						
+					</picture>
+					
 					<h4 class="element__heading">Мойки</h5>
 					<div class="heading__block">
 						<a href=""><img  class="block__class" src="menu.svg" alt="catalog"></a>
